@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stig-poam-builder"
+version = "0.1.0"
+description = "Turn DISA STIG checklists (.ckl/.cklb) and ACAS/Nessus scans (.nessus) into POA&Ms: eMASS-style XLSX, OSCAL 1.1.2 JSON, CSV, and a summary report."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Juliet Rodriguez" }]
+requires-python = ">=3.11"
+keywords = ["rmf", "stig", "poam", "acas", "nessus", "oscal", "emass", "nist-800-53", "grc"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Security",
+    "Environment :: Console",
+]
+dependencies = [
+    "defusedxml>=0.7",
+    "openpyxl>=3.1",
+]
+
+[project.optional-dependencies]
+dashboard = ["streamlit>=1.30"]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "ruff>=0.4",
+    "jsonschema>=4.18",
+]
+
+[project.scripts]
+stig-poam = "stig_poam_builder.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/JulietRodriguez/stig-poam-builder"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+stig_poam_builder = ["data/*.toml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S", "SIM", "RUF"]
+ignore = [
+    "S101",  # assert is fine in tests
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S"]
+
+[tool.coverage.run]
+source = ["stig_poam_builder"]
+omit = ["*/dashboard.py"]
