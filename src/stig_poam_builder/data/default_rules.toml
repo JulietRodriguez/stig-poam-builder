@@ -1,0 +1,38 @@
+# stig-poam-builder default rules.
+# Copy this file, edit it, and pass it with:  stig-poam build ... --rules my_rules.toml
+# Any key you leave out falls back to the value below.
+
+[schedule]
+# Days from the as-of date to the POA&M Scheduled Completion Date, per CAT.
+# These are EXAMPLE values. Set them to your AO's / organization's policy.
+cat_i_days = 30
+cat_ii_days = 90
+cat_iii_days = 180
+
+[mapping]
+# NIST SP 800-53 revision to read from the CCI List (5, or 4 for legacy packages).
+nist_revision = 5
+# Control used when a STIG rule has no CCI that maps (DISA's catch-all for
+# configuration settings is CCI-000366 -> CM-6).
+stig_unmapped_control = "CM-6"
+# Control used for ACAS vulnerability findings (flaw remediation).
+acas_control = "SI-2"
+
+[nessus]
+include_informational = false
+
+[nessus.severity_map]
+# Nessus severity (0=Info, 1=Low, 2=Medium, 3=High, 4=Critical) -> CAT.
+# A plugin's own stig_severity always wins over this table.
+"4" = "CAT I"
+"3" = "CAT I"
+"2" = "CAT II"
+"1" = "CAT III"
+"0" = "CAT III"
+
+[poam]
+# Also POA&M "Not Reviewed" checks (off by default: they are reported as gaps).
+include_not_reviewed = false
+status = "Ongoing"
+office_org = ""
+resources_required = ""

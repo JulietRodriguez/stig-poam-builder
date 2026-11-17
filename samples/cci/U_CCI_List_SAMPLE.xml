@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SAMPLE EXCERPT in the DISA CCI List XML format, for tests and the demo only.
+
+  It contains just the CCIs used by the synthetic sample checklists. Definitions
+  are placeholders (not DISA's text). The NIST SP 800-53 references show the
+  structure the parser reads; verify any mapping against the official list.
+
+  For real work, download the current U_CCI_List.xml from DISA (Cyber Exchange,
+  "Control Correlation Identifier (CCI)") and pass it to "stig-poam build" with
+  the cci-list option. See README.md.
+-->
+<cci_list xmlns="http://iase.disa.mil/cci">
+  <metadata>
+    <version>SAMPLE</version>
+    <publishdate>2026-11-17</publishdate>
+  </metadata>
+  <cci_items>
+    <cci_item id="CCI-000044">
+      <status>published</status>
+      <definition>Sample entry. See the official DISA CCI List for the definition.</definition>
+      <type>technical</type>
+      <references>
+        <reference creator="NIST" title="NIST SP 800-53 Revision 4" version="4" location="https://csrc.nist.gov/" index="AC-7 a" />
+        <reference creator="NIST" title="NIST SP 800-53 Revision 5" version="5" location="https://csrc.nist.gov/" index="AC-7 a" />
+      </references>
+    </cci_item>
+    <cci_item id="CCI-000048">
+      <status>published</status>
+      <definition>Sample entry. See the official DISA CCI List for the definition.</definition>
+      <type>technical</type>
+      <references>
+        <reference creator="NIST" title="NIST SP 800-53 Revision 4" version="4" location="https://csrc.nist.gov/" index="AC-8 a" />
+        <reference creator="NIST" title="NIST SP 800-53 Revision 5" version="5" location="https://csrc.nist.gov/" index="AC-8 a" />
+      </references>
+    </cci_item>
+    <cci_item id="CCI-000172">
+      <status>published</status>
+      <definition>Sample entry. See the official DISA CCI List for the definition.</definition>
+      <type>technical</type>
+      <references>
+        <reference creator="NIST" title="NIST SP 800-53 Revision 4" version="4" location="https://csrc.nist.gov/" index="AU-12 c" />
+        <reference creator="NIST" title="NIST SP 800-53 Revision 5" version="5" location="https://csrc.nist.gov/" index="AU-12 c" />
+      </references>
+    </cci_item>
+    <cci_item id="CCI-000196">
+      <status>published</status>
+      <definition>Sample entry. See the official DISA CCI List for the definition.</definition>
+      <type>technical</type>
+      <references>
+        <reference creator="NIST" title="NIST SP 800-53 Revision 4" version="4" location="https://csrc.nist.gov/" index="IA-5 (1) (c)" />
+        <reference creator="NIST" title="NIST SP 800-53 Revision 5" version="5" location="https://csrc.nist.gov/" index="IA-5 (1) (c)" />
+      </references>
+    </cci_item>
+    <cci_item id="CCI-000213">
+      <status>published</status>
+      <definition>Sample entry. See the official DISA CCI List for the definition.</definition>
+      <type>technical</type>
+      <references>
+        <reference creator="NIST" title="NIST SP 800-53 Revision 4" version="4" location="https://csrc.nist.gov/" index="AC-3" />
+        <reference creator="NIST" title="NIST SP 800-53 Revision 5" version="5" location="https://csrc.nist.gov/" index="AC-3" />
+      </references>
+    </cci_item>
+    <cci_item id="CCI-000366">
+      <status>published</status>
+      <definition>Sample entry. See the official DISA CCI List for the definition.</definition>
+      <type>technical</type>
+      <references>
+        <reference creator="NIST" title="NIST SP 800-53 Revision 4" version="4" location="https://csrc.nist.gov/" index="CM-6 b" />
+        <reference creator="NIST" title="NIST SP 800-53 Revision 5" version="5" location="https://csrc.nist.gov/" index="CM-6 b" />
+        <reference creator="NIST" title="NIST SP 800-53A" version="1" location="https://csrc.nist.gov/" index="CM-6.1 (iv)" />
+      </references>
+    </cci_item>
+    <cci_item id="CCI-001453">
+      <status>published</status>
+      <definition>Sample entry. See the official DISA CCI List for the definition.</definition>
+      <type>technical</type>
+      <references>
+        <reference creator="NIST" title="NIST SP 800-53 Revision 4" version="4" location="https://csrc.nist.gov/" index="AC-17 (2)" />
+        <reference creator="NIST" title="NIST SP 800-53 Revision 5" version="5" location="https://csrc.nist.gov/" index="AC-17 (2)" />
+      </references>
+    </cci_item>
+    <cci_item id="CCI-001494">
+      <status>published</status>
+      <definition>Sample entry. See the official DISA CCI List for the definition.</definition>
+      <type>technical</type>
+      <references>
+        <reference creator="NIST" title="NIST SP 800-53 Revision 4" version="4" location="https://csrc.nist.gov/" index="AU-9" />
+        <reference creator="NIST" title="NIST SP 800-53 Revision 5" version="5" location="https://csrc.nist.gov/" index="AU-9 a" />
+      </references>
+    </cci_item>
+    <cci_item id="CCI-002418">
+      <status>published</status>
+      <definition>Sample entry. See the official DISA CCI List for the definition.</definition>
+      <type>technical</type>
+      <references>
+        <reference creator="NIST" title="NIST SP 800-53 Revision 4" version="4" location="https://csrc.nist.gov/" index="SC-8" />
+        <reference creator="NIST" title="NIST SP 800-53 Revision 5" version="5" location="https://csrc.nist.gov/" index="SC-8" />
+      </references>
+    </cci_item>
+    <cci_item id="CCI-002450">
+      <status>published</status>
+      <definition>Sample entry. See the official DISA CCI List for the definition.</definition>
+      <type>technical</type>
+      <references>
+        <reference creator="NIST" title="NIST SP 800-53 Revision 4" version="4" location="https://csrc.nist.gov/" index="SC-13" />
+        <reference creator="NIST" title="NIST SP 800-53 Revision 5" version="5" location="https://csrc.nist.gov/" index="SC-13 b" />
+      </references>
+    </cci_item>
+  </cci_items>
+</cci_list>
