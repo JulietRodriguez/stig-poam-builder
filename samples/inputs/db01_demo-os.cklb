@@ -1,0 +1,206 @@
+{
+  "title": "SYNTHETIC SAMPLE DATA - not from any real system",
+  "id": "00000000-0000-4000-8000-000000000001",
+  "cklb_version": "1.0",
+  "target_data": {
+    "target_type": "Computing",
+    "host_name": "db01",
+    "ip_address": "192.0.2.12",
+    "mac_address": "00:00:5E:00:53:12",
+    "fqdn": "db01.demo.example",
+    "role": "Member Server",
+    "comments": ""
+  },
+  "stigs": [
+    {
+      "stig_name": "SYNTHETIC Demo Operating System Security Technical Implementation Guide",
+      "display_name": "SYNTHETIC Demo Operating System Security Technical Implementation Guide",
+      "stig_id": "SYNTHETIC_Demo_OS_STIG",
+      "version": "1",
+      "release_info": "Release: 2 Benchmark Date: 01 Oct 2026",
+      "rules": [
+        {
+          "group_id": "V-900001",
+          "rule_id": "SV-900001r10001_rule",
+          "rule_version": "DEMO-OS-000010",
+          "group_title": "SRG-OS-900001-DEMO",
+          "rule_title": "The demo OS must store only encrypted representations of passwords.",
+          "severity": "high",
+          "status": "open",
+          "ccis": [
+            "CCI-000196"
+          ],
+          "discussion": "Synthetic discussion for V-900001. Not real STIG content.",
+          "check_content": "Synthetic check procedure for V-900001.",
+          "fix_text": "Synthetic fix: apply the configuration described in DEMO-OS-000010.",
+          "finding_details": "Synthetic finding detail.",
+          "comments": "",
+          "overrides": {}
+        },
+        {
+          "group_id": "V-900002",
+          "rule_id": "SV-900002r10002_rule",
+          "rule_version": "DEMO-OS-000020",
+          "group_title": "SRG-OS-900002-DEMO",
+          "rule_title": "The demo OS must display the Standard Mandatory DoD Notice and Consent Banner before granting access.",
+          "severity": "medium",
+          "status": "open",
+          "ccis": [
+            "CCI-000048"
+          ],
+          "discussion": "Synthetic discussion for V-900002. Not real STIG content.",
+          "check_content": "Synthetic check procedure for V-900002.",
+          "fix_text": "Synthetic fix: apply the configuration described in DEMO-OS-000020.",
+          "finding_details": "Synthetic finding detail.",
+          "comments": "",
+          "overrides": {}
+        },
+        {
+          "group_id": "V-900003",
+          "rule_id": "SV-900003r10003_rule",
+          "rule_version": "DEMO-OS-000030",
+          "group_title": "SRG-OS-900003-DEMO",
+          "rule_title": "The demo OS must enforce a limit of three consecutive invalid logon attempts.",
+          "severity": "medium",
+          "status": "not_a_finding",
+          "ccis": [
+            "CCI-000044"
+          ],
+          "discussion": "Synthetic discussion for V-900003. Not real STIG content.",
+          "check_content": "Synthetic check procedure for V-900003.",
+          "fix_text": "Synthetic fix: apply the configuration described in DEMO-OS-000030.",
+          "finding_details": "",
+          "comments": "",
+          "overrides": {}
+        },
+        {
+          "group_id": "V-900004",
+          "rule_id": "SV-900004r10004_rule",
+          "rule_version": "DEMO-OS-000040",
+          "group_title": "SRG-OS-900004-DEMO",
+          "rule_title": "The demo OS must generate audit records for privileged activity.",
+          "severity": "medium",
+          "status": "open",
+          "ccis": [
+            "CCI-000172"
+          ],
+          "discussion": "Synthetic discussion for V-900004. Not real STIG content.",
+          "check_content": "Synthetic check procedure for V-900004.",
+          "fix_text": "Synthetic fix: apply the configuration described in DEMO-OS-000040.",
+          "finding_details": "Synthetic finding detail.",
+          "comments": "",
+          "overrides": {}
+        },
+        {
+          "group_id": "V-900005",
+          "rule_id": "SV-900005r10005_rule",
+          "rule_version": "DEMO-OS-000050",
+          "group_title": "SRG-OS-900005-DEMO",
+          "rule_title": "The demo OS must protect audit tools from unauthorized modification.",
+          "severity": "low",
+          "status": "open",
+          "ccis": [
+            "CCI-001494"
+          ],
+          "discussion": "Synthetic discussion for V-900005. Not real STIG content.",
+          "check_content": "Synthetic check procedure for V-900005.",
+          "fix_text": "Synthetic fix: apply the configuration described in DEMO-OS-000050.",
+          "finding_details": "Synthetic finding detail.",
+          "comments": "",
+          "overrides": {}
+        },
+        {
+          "group_id": "V-900006",
+          "rule_id": "SV-900006r10006_rule",
+          "rule_version": "DEMO-OS-000060",
+          "group_title": "SRG-OS-900006-DEMO",
+          "rule_title": "The demo OS must be configured in accordance with the security configuration settings.",
+          "severity": "medium",
+          "status": "not_reviewed",
+          "ccis": [
+            "CCI-000366"
+          ],
+          "discussion": "Synthetic discussion for V-900006. Not real STIG content.",
+          "check_content": "Synthetic check procedure for V-900006.",
+          "fix_text": "Synthetic fix: apply the configuration described in DEMO-OS-000060.",
+          "finding_details": "",
+          "comments": "",
+          "overrides": {}
+        },
+        {
+          "group_id": "V-900007",
+          "rule_id": "SV-900007r10007_rule",
+          "rule_version": "DEMO-OS-000070",
+          "group_title": "SRG-OS-900007-DEMO",
+          "rule_title": "The demo OS must use FIPS-validated cryptography to protect remote access sessions.",
+          "severity": "high",
+          "status": "open",
+          "ccis": [
+            "CCI-001453",
+            "CCI-002450"
+          ],
+          "discussion": "Synthetic discussion for V-900007. Not real STIG content.",
+          "check_content": "Synthetic check procedure for V-900007.",
+          "fix_text": "Synthetic fix: apply the configuration described in DEMO-OS-000070.",
+          "finding_details": "Synthetic finding detail.",
+          "comments": "",
+          "overrides": {}
+        },
+        {
+          "group_id": "V-900008",
+          "rule_id": "SV-900008r10008_rule",
+          "rule_version": "DEMO-OS-000080",
+          "group_title": "SRG-OS-900008-DEMO",
+          "rule_title": "The demo OS must enforce approved authorizations for access to system files.",
+          "severity": "medium",
+          "status": "not_a_finding",
+          "ccis": [
+            "CCI-000213"
+          ],
+          "discussion": "Synthetic discussion for V-900008. Not real STIG content.",
+          "check_content": "Synthetic check procedure for V-900008.",
+          "fix_text": "Synthetic fix: apply the configuration described in DEMO-OS-000080.",
+          "finding_details": "",
+          "comments": "",
+          "overrides": {}
+        },
+        {
+          "group_id": "V-900009",
+          "rule_id": "SV-900009r10009_rule",
+          "rule_version": "DEMO-OS-000090",
+          "group_title": "SRG-OS-900009-DEMO",
+          "rule_title": "The demo OS must protect the confidentiality of transmitted information.",
+          "severity": "low",
+          "status": "not_applicable",
+          "ccis": [
+            "CCI-002418"
+          ],
+          "discussion": "Synthetic discussion for V-900009. Not real STIG content.",
+          "check_content": "Synthetic check procedure for V-900009.",
+          "fix_text": "Synthetic fix: apply the configuration described in DEMO-OS-000090.",
+          "finding_details": "",
+          "comments": "",
+          "overrides": {}
+        },
+        {
+          "group_id": "V-900010",
+          "rule_id": "SV-900010r10010_rule",
+          "rule_version": "DEMO-OS-000100",
+          "group_title": "SRG-OS-900010-DEMO",
+          "rule_title": "The demo OS must disable an unsupported legacy service.",
+          "severity": "medium",
+          "status": "open",
+          "ccis": [
+            "CCI-009999"
+          ],
+          "discussion": "Synthetic discussion for V-900010. Not real STIG content.",
+          "check_content": "Synthetic check procedure for V-900010.",
+          "fix_text": "Synthetic fix: apply the configuration described in DEMO-OS-000100.",
+          "finding_details": "Synthetic finding detail.",
+          "comments": "",
+          "overrides": {}
+        }
+      ]
+    }
+  ]
+}

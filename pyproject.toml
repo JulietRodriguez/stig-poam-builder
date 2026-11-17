@@ -62,7 +62,8 @@ ignore = [
 ]
 
 [tool.ruff.lint.per-file-ignores]
-"tests/*" = ["S"]
+"tests/*" = ["S", "E501"]
+"tools/*" = ["E501"]
 
 [tool.coverage.run]
 source = ["stig_poam_builder"]
