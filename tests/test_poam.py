@@ -1,35 +1,11 @@
 from dataclasses import replace
 from datetime import date
 
-import pytest
-
-from stig_poam_builder.cci import load_cci_list
 from stig_poam_builder.config import load_rules
 from stig_poam_builder.models import Asset, Cat, Finding, SourceType, Status
-from stig_poam_builder.parsers import load_file
 from stig_poam_builder.poam import build_poam
 
-from .conftest import ROOT
-
-AS_OF = date(2026, 11, 17)
-
-
-@pytest.fixture
-def catalog():
-    return load_cci_list(ROOT / "samples" / "cci" / "U_CCI_List_SAMPLE.xml")
-
-
-@pytest.fixture
-def all_findings(sample_files):
-    out = []
-    for p in sample_files:
-        out.extend(load_file(p))
-    return out
-
-
-@pytest.fixture
-def result(all_findings, catalog):
-    return build_poam(all_findings, catalog, load_rules(), AS_OF)
+from .conftest import AS_OF
 
 
 def _f(**kw) -> Finding:
