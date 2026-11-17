@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 import sys
 from datetime import UTC, date, datetime
 from importlib import resources
@@ -77,7 +78,21 @@ def build_parser() -> argparse.ArgumentParser:
     )
 
     sub.add_parser("init-rules", help="print the default rules TOML to stdout")
+    sub.add_parser("dashboard", help="launch the optional Streamlit dashboard")
     return ap
+
+
+def _cmd_dashboard() -> int:
+    try:
+        import streamlit  # noqa: F401
+    except ImportError:
+        print(
+            "error: the dashboard needs Streamlit: pip install 'stig-poam-builder[dashboard]'",
+            file=sys.stderr,
+        )
+        return 2
+    app = Path(__file__).with_name("dashboard.py")
+    return subprocess.call([sys.executable, "-m", "streamlit", "run", str(app)])  # noqa: S603
 
 
 def _cmd_build(args: argparse.Namespace) -> int:
@@ -139,6 +154,8 @@ def main(argv: list[str] | None = None) -> int:
         text = resources.files("stig_poam_builder").joinpath("data/default_rules.toml").read_text()
         sys.stdout.write(text)
         return 0
+    if args.command == "dashboard":
+        return _cmd_dashboard()
     try:
         return _cmd_build(args)
     except (ParseError, ConfigError, FileNotFoundError) as exc:

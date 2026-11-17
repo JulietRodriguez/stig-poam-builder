@@ -120,3 +120,22 @@ def test_module_entry_point():
     )
     assert proc.returncode == 0
     assert __version__ in proc.stdout
+
+
+def test_dashboard_requires_streamlit(monkeypatch, capsys):
+    monkeypatch.setitem(sys.modules, "streamlit", None)  # force ImportError
+    assert main(["dashboard"]) == 2
+    assert "pip install" in capsys.readouterr().err
+
+
+def test_dashboard_launches_streamlit(monkeypatch):
+    import types
+
+    import stig_poam_builder.cli as cli
+
+    monkeypatch.setitem(sys.modules, "streamlit", types.ModuleType("streamlit"))
+    seen = {}
+    monkeypatch.setattr(cli.subprocess, "call", lambda cmd: seen.setdefault("cmd", cmd) and 0)
+    assert main(["dashboard"]) == 0
+    assert seen["cmd"][1:4] == ["-m", "streamlit", "run"]
+    assert seen["cmd"][4].endswith("dashboard.py")
