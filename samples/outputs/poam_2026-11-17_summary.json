@@ -1,0 +1,146 @@
+{
+  "as_of": "2026-11-17",
+  "cci_list": "CCI List SAMPLE (10 CCIs)",
+  "nist_revision": 5,
+  "inputs": {
+    "files": [
+      "app01_demo-os.ckl",
+      "db01_demo-os.cklb",
+      "monthly_scan.nessus",
+      "web01_demo-os.ckl"
+    ],
+    "hosts": [
+      "app01",
+      "db01",
+      "web01"
+    ],
+    "stig_checks": 30,
+    "stig_status_counts": {
+      "Open": 18,
+      "Not a Finding": 7,
+      "Not Applicable": 2,
+      "Not Reviewed": 3
+    },
+    "acas_findings": 8
+  },
+  "poam_items": 15,
+  "open_instances": 26,
+  "items_by_cat": {
+    "CAT I": 5,
+    "CAT II": 7,
+    "CAT III": 3
+  },
+  "instances_by_cat": {
+    "CAT I": 7,
+    "CAT II": 13,
+    "CAT III": 6
+  },
+  "items_by_source": {
+    "STIG": 10,
+    "ACAS": 5
+  },
+  "by_family": {
+    "AC": {
+      "items": {
+        "CAT I": 1,
+        "CAT II": 3,
+        "CAT III": 0
+      },
+      "instances": {
+        "CAT I": 2,
+        "CAT II": 5,
+        "CAT III": 0
+      }
+    },
+    "AU": {
+      "items": {
+        "CAT I": 0,
+        "CAT II": 1,
+        "CAT III": 1
+      },
+      "instances": {
+        "CAT I": 0,
+        "CAT II": 2,
+        "CAT III": 2
+      }
+    },
+    "CM": {
+      "items": {
+        "CAT I": 0,
+        "CAT II": 2,
+        "CAT III": 0
+      },
+      "instances": {
+        "CAT I": 0,
+        "CAT II": 3,
+        "CAT III": 0
+      }
+    },
+    "IA": {
+      "items": {
+        "CAT I": 1,
+        "CAT II": 0,
+        "CAT III": 0
+      },
+      "instances": {
+        "CAT I": 2,
+        "CAT II": 0,
+        "CAT III": 0
+      }
+    },
+    "SC": {
+      "items": {
+        "CAT I": 0,
+        "CAT II": 0,
+        "CAT III": 1
+      },
+      "instances": {
+        "CAT I": 0,
+        "CAT II": 0,
+        "CAT III": 2
+      }
+    },
+    "SI": {
+      "items": {
+        "CAT I": 3,
+        "CAT II": 1,
+        "CAT III": 1
+      },
+      "instances": {
+        "CAT I": 3,
+        "CAT II": 3,
+        "CAT III": 2
+      }
+    }
+  },
+  "by_control": {
+    "AC-3": 1,
+    "AC-7": 1,
+    "AC-8": 1,
+    "AC-17(2)": 1,
+    "AU-9": 1,
+    "AU-12": 1,
+    "CM-6": 2,
+    "IA-5(1)": 1,
+    "SC-8": 1,
+    "SI-2": 5
+  },
+  "not_reviewed": {
+    "total": 3,
+    "by_host": {
+      "app01": 1,
+      "db01": 1,
+      "web01": 1
+    },
+    "included_in_poam": false
+  },
+  "unmapped_ccis": [
+    "CCI-009999"
+  ],
+  "fallback_items": [
+    "V-900010"
+  ],
+  "overrides": [
+    "V-900003"
+  ]
+}

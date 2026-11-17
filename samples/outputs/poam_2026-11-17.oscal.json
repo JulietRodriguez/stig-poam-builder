@@ -1,0 +1,2017 @@
+{
+  "plan-of-action-and-milestones": {
+    "uuid": "f5138c7c-7930-5b94-9909-8c484140e0fa",
+    "metadata": {
+      "title": "Plan of Action and Milestones: Demo System (synthetic)",
+      "last-modified": "2026-11-17T17:01:22Z",
+      "version": "2026-11-17",
+      "oscal-version": "1.1.2",
+      "props": [
+        {
+          "name": "generator",
+          "value": "stig-poam-builder 0.1.0",
+          "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+        }
+      ],
+      "remarks": "Generated from STIG checklists and ACAS scan results. Review before submission."
+    },
+    "system-id": {
+      "identifier-type": "https://ietf.org/rfc/rfc4122",
+      "id": "7196fd7b-bbe1-5606-96b1-ffa94a5fecf0"
+    },
+    "local-definitions": {
+      "inventory-items": [
+        {
+          "uuid": "cacca8ad-da4c-51a8-a442-c195437766f2",
+          "description": "Host app01 (from checklist/scan input).",
+          "props": [
+            {
+              "name": "asset-id",
+              "value": "app01"
+            },
+            {
+              "name": "fqdn",
+              "value": "app01.demo.example"
+            },
+            {
+              "name": "ipv4-address",
+              "value": "192.0.2.13"
+            }
+          ]
+        },
+        {
+          "uuid": "f4294867-bede-597b-889d-38ec2be78dfe",
+          "description": "Host db01 (from checklist/scan input).",
+          "props": [
+            {
+              "name": "asset-id",
+              "value": "db01"
+            },
+            {
+              "name": "fqdn",
+              "value": "db01.demo.example"
+            },
+            {
+              "name": "ipv4-address",
+              "value": "192.0.2.12"
+            },
+            {
+              "name": "mac-address",
+              "value": "00:00:5E:00:53:12"
+            }
+          ]
+        },
+        {
+          "uuid": "2dc419de-d192-50f6-bf05-edd048311a51",
+          "description": "Host web01 (from checklist/scan input).",
+          "props": [
+            {
+              "name": "asset-id",
+              "value": "web01"
+            },
+            {
+              "name": "fqdn",
+              "value": "web01.demo.example"
+            },
+            {
+              "name": "ipv4-address",
+              "value": "192.0.2.11"
+            },
+            {
+              "name": "mac-address",
+              "value": "00:00:5E:00:53:11"
+            }
+          ]
+        }
+      ]
+    },
+    "observations": [
+      {
+        "uuid": "7e70789b-df12-5f9e-9d95-0b15e33c3d70",
+        "title": "V-900007: The demo OS must use FIPS-validated cryptography to protect remote access sessions.",
+        "description": "STIG checklist review reported this weakness as open on 2 device(s).",
+        "props": [
+          {
+            "name": "security-checks",
+            "value": "V-900007; SV-900007r10007_rule; DEMO-OS-000070",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "subjects": [
+          {
+            "subject-uuid": "f4294867-bede-597b-889d-38ec2be78dfe",
+            "type": "inventory-item"
+          },
+          {
+            "subject-uuid": "2dc419de-d192-50f6-bf05-edd048311a51",
+            "type": "inventory-item"
+          }
+        ],
+        "collected": "2026-11-17T17:01:22Z",
+        "remarks": "db01: Synthetic finding detail.\n\nweb01: Synthetic finding detail: setting not configured."
+      },
+      {
+        "uuid": "aee2d112-4ccd-5140-a7f0-4cf92575b367",
+        "title": "V-900001: The demo OS must store only encrypted representations of passwords.",
+        "description": "STIG checklist review reported this weakness as open on 2 device(s).",
+        "props": [
+          {
+            "name": "security-checks",
+            "value": "V-900001; SV-900001r10001_rule; DEMO-OS-000010",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "subjects": [
+          {
+            "subject-uuid": "f4294867-bede-597b-889d-38ec2be78dfe",
+            "type": "inventory-item"
+          },
+          {
+            "subject-uuid": "2dc419de-d192-50f6-bf05-edd048311a51",
+            "type": "inventory-item"
+          }
+        ],
+        "collected": "2026-11-17T17:01:22Z",
+        "remarks": "db01: Synthetic finding detail.\n\nweb01: Synthetic finding detail: setting not configured."
+      },
+      {
+        "uuid": "0e0f3e29-2cc3-524e-aa05-a7da6c2aa7c2",
+        "title": "ACAS-900101: SYNTHETIC: Demo Web Server < 9.9.1 Remote Code Execution",
+        "description": "ACAS vulnerability scan reported this weakness as open on 1 device(s).",
+        "props": [
+          {
+            "name": "security-checks",
+            "value": "Plugin ID 900101",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "subjects": [
+          {
+            "subject-uuid": "2dc419de-d192-50f6-bf05-edd048311a51",
+            "type": "inventory-item"
+          }
+        ],
+        "collected": "2026-11-17T17:01:22Z",
+        "remarks": "web01: Synthetic plugin output for web01."
+      },
+      {
+        "uuid": "40627f7a-2a70-5bea-967e-41b6fdcd09bc",
+        "title": "ACAS-900103: SYNTHETIC: Demo Database Missing Security Patch",
+        "description": "ACAS vulnerability scan reported this weakness as open on 1 device(s).",
+        "props": [
+          {
+            "name": "security-checks",
+            "value": "Plugin ID 900103",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "subjects": [
+          {
+            "subject-uuid": "f4294867-bede-597b-889d-38ec2be78dfe",
+            "type": "inventory-item"
+          }
+        ],
+        "collected": "2026-11-17T17:01:22Z",
+        "remarks": "db01: Synthetic plugin output for db01."
+      },
+      {
+        "uuid": "d8d76fb6-9655-5f84-a9c9-51c90743d239",
+        "title": "ACAS-900105: SYNTHETIC: Demo OS Unsupported Version Detected",
+        "description": "ACAS vulnerability scan reported this weakness as open on 1 device(s).",
+        "props": [
+          {
+            "name": "security-checks",
+            "value": "Plugin ID 900105",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "subjects": [
+          {
+            "subject-uuid": "cacca8ad-da4c-51a8-a442-c195437766f2",
+            "type": "inventory-item"
+          }
+        ],
+        "collected": "2026-11-17T17:01:22Z",
+        "remarks": "app01: Synthetic plugin output for app01."
+      },
+      {
+        "uuid": "b81f855a-5aba-5e1c-bb2b-1455ae65eca6",
+        "title": "V-900008: The demo OS must enforce approved authorizations for access to system files.",
+        "description": "STIG checklist review reported this weakness as open on 1 device(s).",
+        "props": [
+          {
+            "name": "security-checks",
+            "value": "V-900008; SV-900008r10008_rule; DEMO-OS-000080",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "subjects": [
+          {
+            "subject-uuid": "cacca8ad-da4c-51a8-a442-c195437766f2",
+            "type": "inventory-item"
+          }
+        ],
+        "collected": "2026-11-17T17:01:22Z",
+        "remarks": "app01: Synthetic finding detail: setting not configured."
+      },
+      {
+        "uuid": "72db5b68-fff2-57ea-8b5b-850807d2113b",
+        "title": "V-900003: The demo OS must enforce a limit of three consecutive invalid logon attempts.",
+        "description": "STIG checklist review reported this weakness as open on 2 device(s).",
+        "props": [
+          {
+            "name": "security-checks",
+            "value": "V-900003; SV-900003r10003_rule; DEMO-OS-000030",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "subjects": [
+          {
+            "subject-uuid": "cacca8ad-da4c-51a8-a442-c195437766f2",
+            "type": "inventory-item"
+          },
+          {
+            "subject-uuid": "2dc419de-d192-50f6-bf05-edd048311a51",
+            "type": "inventory-item"
+          }
+        ],
+        "collected": "2026-11-17T17:01:22Z",
+        "remarks": "app01: Synthetic finding detail: setting not configured.\n\nweb01: Synthetic finding detail: setting not configured."
+      },
+      {
+        "uuid": "695474d2-d7d0-5138-9b79-2c4f7f918790",
+        "title": "V-900002: The demo OS must display the Standard Mandatory DoD Notice and Consent Banner before granting access.",
+        "description": "STIG checklist review reported this weakness as open on 2 device(s).",
+        "props": [
+          {
+            "name": "security-checks",
+            "value": "V-900002; SV-900002r10002_rule; DEMO-OS-000020",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "subjects": [
+          {
+            "subject-uuid": "cacca8ad-da4c-51a8-a442-c195437766f2",
+            "type": "inventory-item"
+          },
+          {
+            "subject-uuid": "f4294867-bede-597b-889d-38ec2be78dfe",
+            "type": "inventory-item"
+          }
+        ],
+        "collected": "2026-11-17T17:01:22Z",
+        "remarks": "app01: Synthetic finding detail: setting not configured.\n\ndb01: Synthetic finding detail."
+      },
+      {
+        "uuid": "5fdd74af-6caa-5650-bd53-1f3477ff0214",
+        "title": "V-900004: The demo OS must generate audit records for privileged activity.",
+        "description": "STIG checklist review reported this weakness as open on 2 device(s).",
+        "props": [
+          {
+            "name": "security-checks",
+            "value": "V-900004; SV-900004r10004_rule; DEMO-OS-000040",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "subjects": [
+          {
+            "subject-uuid": "f4294867-bede-597b-889d-38ec2be78dfe",
+            "type": "inventory-item"
+          },
+          {
+            "subject-uuid": "2dc419de-d192-50f6-bf05-edd048311a51",
+            "type": "inventory-item"
+          }
+        ],
+        "collected": "2026-11-17T17:01:22Z",
+        "remarks": "db01: Synthetic finding detail.\n\nweb01: Synthetic finding detail: setting not configured."
+      },
+      {
+        "uuid": "edf30f97-d7f0-5e04-910a-e5d49182dcf0",
+        "title": "V-900006: The demo OS must be configured in accordance with the security configuration settings.",
+        "description": "STIG checklist review reported this weakness as open on 2 device(s).",
+        "props": [
+          {
+            "name": "security-checks",
+            "value": "V-900006; SV-900006r10006_rule; DEMO-OS-000060",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "subjects": [
+          {
+            "subject-uuid": "cacca8ad-da4c-51a8-a442-c195437766f2",
+            "type": "inventory-item"
+          },
+          {
+            "subject-uuid": "2dc419de-d192-50f6-bf05-edd048311a51",
+            "type": "inventory-item"
+          }
+        ],
+        "collected": "2026-11-17T17:01:22Z",
+        "remarks": "app01: Synthetic finding detail: setting not configured.\n\nweb01: Synthetic finding detail: setting not configured."
+      },
+      {
+        "uuid": "096b4186-8cb2-5af5-8940-4fa762bdb69e",
+        "title": "V-900010: The demo OS must disable an unsupported legacy service.",
+        "description": "STIG checklist review reported this weakness as open on 1 device(s).",
+        "props": [
+          {
+            "name": "security-checks",
+            "value": "V-900010; SV-900010r10010_rule; DEMO-OS-000100",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "subjects": [
+          {
+            "subject-uuid": "f4294867-bede-597b-889d-38ec2be78dfe",
+            "type": "inventory-item"
+          }
+        ],
+        "collected": "2026-11-17T17:01:22Z",
+        "remarks": "db01: Synthetic finding detail."
+      },
+      {
+        "uuid": "22a0e9ba-99fa-5f55-88a4-41904118fd20",
+        "title": "ACAS-900102: SYNTHETIC: Demo TLS Library Weak Cipher Suites Supported",
+        "description": "ACAS vulnerability scan reported this weakness as open on 3 device(s).",
+        "props": [
+          {
+            "name": "security-checks",
+            "value": "Plugin ID 900102",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "subjects": [
+          {
+            "subject-uuid": "cacca8ad-da4c-51a8-a442-c195437766f2",
+            "type": "inventory-item"
+          },
+          {
+            "subject-uuid": "f4294867-bede-597b-889d-38ec2be78dfe",
+            "type": "inventory-item"
+          },
+          {
+            "subject-uuid": "2dc419de-d192-50f6-bf05-edd048311a51",
+            "type": "inventory-item"
+          }
+        ],
+        "collected": "2026-11-17T17:01:22Z",
+        "remarks": "web01: Synthetic plugin output for web01.\n\ndb01: Synthetic plugin output for db01.\n\napp01: Synthetic plugin output for app01."
+      },
+      {
+        "uuid": "f73f35c3-1d5e-563a-b109-2665f6ceaadf",
+        "title": "V-900005: The demo OS must protect audit tools from unauthorized modification.",
+        "description": "STIG checklist review reported this weakness as open on 2 device(s).",
+        "props": [
+          {
+            "name": "security-checks",
+            "value": "V-900005; SV-900005r10005_rule; DEMO-OS-000050",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "subjects": [
+          {
+            "subject-uuid": "cacca8ad-da4c-51a8-a442-c195437766f2",
+            "type": "inventory-item"
+          },
+          {
+            "subject-uuid": "f4294867-bede-597b-889d-38ec2be78dfe",
+            "type": "inventory-item"
+          }
+        ],
+        "collected": "2026-11-17T17:01:22Z",
+        "remarks": "app01: Synthetic finding detail: setting not configured.\n\ndb01: Synthetic finding detail."
+      },
+      {
+        "uuid": "e1d5abe3-1981-56e5-ad19-672a6b457abf",
+        "title": "V-900009: The demo OS must protect the confidentiality of transmitted information.",
+        "description": "STIG checklist review reported this weakness as open on 2 device(s).",
+        "props": [
+          {
+            "name": "security-checks",
+            "value": "V-900009; SV-900009r10009_rule; DEMO-OS-000090",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "subjects": [
+          {
+            "subject-uuid": "cacca8ad-da4c-51a8-a442-c195437766f2",
+            "type": "inventory-item"
+          },
+          {
+            "subject-uuid": "2dc419de-d192-50f6-bf05-edd048311a51",
+            "type": "inventory-item"
+          }
+        ],
+        "collected": "2026-11-17T17:01:22Z",
+        "remarks": "app01: Synthetic finding detail: setting not configured.\n\nweb01: Synthetic finding detail: setting not configured."
+      },
+      {
+        "uuid": "f011faf9-23fa-58b9-b411-c144c7f0cba6",
+        "title": "ACAS-900104: SYNTHETIC: Demo SSH Server Banner Discloses Version",
+        "description": "ACAS vulnerability scan reported this weakness as open on 2 device(s).",
+        "props": [
+          {
+            "name": "security-checks",
+            "value": "Plugin ID 900104",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "methods": [
+          "TEST"
+        ],
+        "types": [
+          "finding"
+        ],
+        "subjects": [
+          {
+            "subject-uuid": "cacca8ad-da4c-51a8-a442-c195437766f2",
+            "type": "inventory-item"
+          },
+          {
+            "subject-uuid": "2dc419de-d192-50f6-bf05-edd048311a51",
+            "type": "inventory-item"
+          }
+        ],
+        "collected": "2026-11-17T17:01:22Z",
+        "remarks": "web01: Synthetic plugin output for web01.\n\napp01: Synthetic plugin output for app01."
+      }
+    ],
+    "risks": [
+      {
+        "uuid": "18332498-cff0-5b3c-b0af-410138991558",
+        "title": "The demo OS must use FIPS-validated cryptography to protect remote access sessions.",
+        "description": "The demo OS must use FIPS-validated cryptography to protect remote access sessions.\n\nSynthetic discussion for V-900007. Not real STIG content.",
+        "statement": "Synthetic fix: apply the configuration described in DEMO-OS-000070.",
+        "props": [
+          {
+            "name": "severity-category",
+            "value": "CAT I",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "raw-severity",
+            "value": "High",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "source",
+            "value": "SYNTHETIC Demo Operating System Security Technical Implementation Guide :: Version 1 Release 2 Benchmark Date: 01 Oct 2026",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "cci",
+            "value": "CCI-001453",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "cci",
+            "value": "CCI-002450",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "status": "open",
+        "deadline": "2026-12-17T23:59:59Z",
+        "related-observations": [
+          {
+            "observation-uuid": "7e70789b-df12-5f9e-9d95-0b15e33c3d70"
+          }
+        ]
+      },
+      {
+        "uuid": "5c4fd54e-20dd-5f6b-8c66-0e730f40876b",
+        "title": "The demo OS must store only encrypted representations of passwords.",
+        "description": "The demo OS must store only encrypted representations of passwords.\n\nSynthetic discussion for V-900001. Not real STIG content.",
+        "statement": "Synthetic fix: apply the configuration described in DEMO-OS-000010.",
+        "props": [
+          {
+            "name": "severity-category",
+            "value": "CAT I",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "raw-severity",
+            "value": "High",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "source",
+            "value": "SYNTHETIC Demo Operating System Security Technical Implementation Guide :: Version 1 Release 2 Benchmark Date: 01 Oct 2026",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "cci",
+            "value": "CCI-000196",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "status": "open",
+        "deadline": "2026-12-17T23:59:59Z",
+        "related-observations": [
+          {
+            "observation-uuid": "aee2d112-4ccd-5140-a7f0-4cf92575b367"
+          }
+        ]
+      },
+      {
+        "uuid": "22fbafad-37ed-50c0-aec5-157a3fbd35b5",
+        "title": "SYNTHETIC: Demo Web Server < 9.9.1 Remote Code Execution",
+        "description": "SYNTHETIC: Demo Web Server < 9.9.1 Remote Code Execution\n\nSynthetic synopsis for plugin 900101.",
+        "statement": "Synthetic solution: upgrade or reconfigure per vendor guidance.",
+        "props": [
+          {
+            "name": "severity-category",
+            "value": "CAT I",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "raw-severity",
+            "value": "Very High",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "source",
+            "value": "ACAS: Web Servers",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "cve",
+            "value": "CVE-2099-0001",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "status": "open",
+        "deadline": "2026-12-17T23:59:59Z",
+        "related-observations": [
+          {
+            "observation-uuid": "0e0f3e29-2cc3-524e-aa05-a7da6c2aa7c2"
+          }
+        ]
+      },
+      {
+        "uuid": "ab52e813-617d-5058-910b-6e1da17b3f43",
+        "title": "SYNTHETIC: Demo Database Missing Security Patch",
+        "description": "SYNTHETIC: Demo Database Missing Security Patch\n\nSynthetic synopsis for plugin 900103.",
+        "statement": "Synthetic solution: upgrade or reconfigure per vendor guidance.",
+        "props": [
+          {
+            "name": "severity-category",
+            "value": "CAT I",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "raw-severity",
+            "value": "High",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "source",
+            "value": "ACAS: Databases",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "cve",
+            "value": "CVE-2099-0002",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "cve",
+            "value": "CVE-2099-0003",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "status": "open",
+        "deadline": "2026-12-17T23:59:59Z",
+        "related-observations": [
+          {
+            "observation-uuid": "40627f7a-2a70-5bea-967e-41b6fdcd09bc"
+          }
+        ]
+      },
+      {
+        "uuid": "2526e6c8-a926-5abe-803d-5027f849c67e",
+        "title": "SYNTHETIC: Demo OS Unsupported Version Detected",
+        "description": "SYNTHETIC: Demo OS Unsupported Version Detected\n\nSynthetic synopsis for plugin 900105.",
+        "statement": "Synthetic solution: upgrade or reconfigure per vendor guidance.",
+        "props": [
+          {
+            "name": "severity-category",
+            "value": "CAT I",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "raw-severity",
+            "value": "Very High",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "source",
+            "value": "ACAS: General",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "status": "open",
+        "deadline": "2026-12-17T23:59:59Z",
+        "related-observations": [
+          {
+            "observation-uuid": "d8d76fb6-9655-5f84-a9c9-51c90743d239"
+          }
+        ]
+      },
+      {
+        "uuid": "f5c90fd9-f277-537a-8d4f-a3c9380dc890",
+        "title": "The demo OS must enforce approved authorizations for access to system files.",
+        "description": "The demo OS must enforce approved authorizations for access to system files.\n\nSynthetic discussion for V-900008. Not real STIG content.",
+        "statement": "Synthetic fix: apply the configuration described in DEMO-OS-000080.",
+        "props": [
+          {
+            "name": "severity-category",
+            "value": "CAT II",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "raw-severity",
+            "value": "Moderate",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "source",
+            "value": "SYNTHETIC Demo Operating System Security Technical Implementation Guide :: Version 1 Release 2 Benchmark Date: 01 Oct 2026",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "cci",
+            "value": "CCI-000213",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "status": "open",
+        "deadline": "2027-02-15T23:59:59Z",
+        "related-observations": [
+          {
+            "observation-uuid": "b81f855a-5aba-5e1c-bb2b-1455ae65eca6"
+          }
+        ]
+      },
+      {
+        "uuid": "fcb6d44c-92a2-5be1-a774-4de32fcfde33",
+        "title": "The demo OS must enforce a limit of three consecutive invalid logon attempts.",
+        "description": "The demo OS must enforce a limit of three consecutive invalid logon attempts.\n\nSynthetic discussion for V-900003. Not real STIG content.",
+        "statement": "Synthetic fix: apply the configuration described in DEMO-OS-000030.",
+        "props": [
+          {
+            "name": "severity-category",
+            "value": "CAT II",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "raw-severity",
+            "value": "Moderate",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "source",
+            "value": "SYNTHETIC Demo Operating System Security Technical Implementation Guide :: Version 1 Release 2 Benchmark Date: 01 Oct 2026",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "cci",
+            "value": "CCI-000044",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "status": "open",
+        "deadline": "2027-02-15T23:59:59Z",
+        "related-observations": [
+          {
+            "observation-uuid": "72db5b68-fff2-57ea-8b5b-850807d2113b"
+          }
+        ]
+      },
+      {
+        "uuid": "c6e685b9-8c36-5aa7-bd32-dfcc0f8e3f6c",
+        "title": "The demo OS must display the Standard Mandatory DoD Notice and Consent Banner before granting access.",
+        "description": "The demo OS must display the Standard Mandatory DoD Notice and Consent Banner before granting access.\n\nSynthetic discussion for V-900002. Not real STIG content.",
+        "statement": "Synthetic fix: apply the configuration described in DEMO-OS-000020.",
+        "props": [
+          {
+            "name": "severity-category",
+            "value": "CAT II",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "raw-severity",
+            "value": "Moderate",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "source",
+            "value": "SYNTHETIC Demo Operating System Security Technical Implementation Guide :: Version 1 Release 2 Benchmark Date: 01 Oct 2026",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "cci",
+            "value": "CCI-000048",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "status": "open",
+        "deadline": "2027-02-15T23:59:59Z",
+        "related-observations": [
+          {
+            "observation-uuid": "695474d2-d7d0-5138-9b79-2c4f7f918790"
+          }
+        ]
+      },
+      {
+        "uuid": "8ea066a3-e799-5d4c-a7b5-46c019654dfa",
+        "title": "The demo OS must generate audit records for privileged activity.",
+        "description": "The demo OS must generate audit records for privileged activity.\n\nSynthetic discussion for V-900004. Not real STIG content.",
+        "statement": "Synthetic fix: apply the configuration described in DEMO-OS-000040.",
+        "props": [
+          {
+            "name": "severity-category",
+            "value": "CAT II",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "raw-severity",
+            "value": "Moderate",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "source",
+            "value": "SYNTHETIC Demo Operating System Security Technical Implementation Guide :: Version 1 Release 2 Benchmark Date: 01 Oct 2026",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "cci",
+            "value": "CCI-000172",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "status": "open",
+        "deadline": "2027-02-15T23:59:59Z",
+        "related-observations": [
+          {
+            "observation-uuid": "5fdd74af-6caa-5650-bd53-1f3477ff0214"
+          }
+        ]
+      },
+      {
+        "uuid": "ae075873-f666-532c-9c9c-8d6bcd0ce6f2",
+        "title": "The demo OS must be configured in accordance with the security configuration settings.",
+        "description": "The demo OS must be configured in accordance with the security configuration settings.\n\nSynthetic discussion for V-900006. Not real STIG content.",
+        "statement": "Synthetic fix: apply the configuration described in DEMO-OS-000060.",
+        "props": [
+          {
+            "name": "severity-category",
+            "value": "CAT II",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "raw-severity",
+            "value": "Moderate",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "source",
+            "value": "SYNTHETIC Demo Operating System Security Technical Implementation Guide :: Version 1 Release 2 Benchmark Date: 01 Oct 2026",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "cci",
+            "value": "CCI-000366",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "status": "open",
+        "deadline": "2027-02-15T23:59:59Z",
+        "related-observations": [
+          {
+            "observation-uuid": "edf30f97-d7f0-5e04-910a-e5d49182dcf0"
+          }
+        ]
+      },
+      {
+        "uuid": "c2666850-9eba-5e4d-86d3-45a4e3172cde",
+        "title": "The demo OS must disable an unsupported legacy service.",
+        "description": "The demo OS must disable an unsupported legacy service.\n\nSynthetic discussion for V-900010. Not real STIG content.",
+        "statement": "Synthetic fix: apply the configuration described in DEMO-OS-000100.",
+        "props": [
+          {
+            "name": "severity-category",
+            "value": "CAT II",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "raw-severity",
+            "value": "Moderate",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "source",
+            "value": "SYNTHETIC Demo Operating System Security Technical Implementation Guide :: Version 1 Release 2 Benchmark Date: 01 Oct 2026",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "cci",
+            "value": "CCI-009999",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "status": "open",
+        "deadline": "2027-02-15T23:59:59Z",
+        "related-observations": [
+          {
+            "observation-uuid": "096b4186-8cb2-5af5-8940-4fa762bdb69e"
+          }
+        ]
+      },
+      {
+        "uuid": "9ff8eb90-7337-5539-a6c1-228e59ca0322",
+        "title": "SYNTHETIC: Demo TLS Library Weak Cipher Suites Supported",
+        "description": "SYNTHETIC: Demo TLS Library Weak Cipher Suites Supported\n\nSynthetic synopsis for plugin 900102.",
+        "statement": "Synthetic solution: upgrade or reconfigure per vendor guidance.",
+        "props": [
+          {
+            "name": "severity-category",
+            "value": "CAT II",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "raw-severity",
+            "value": "Moderate",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "source",
+            "value": "ACAS: General",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "status": "open",
+        "deadline": "2027-02-15T23:59:59Z",
+        "related-observations": [
+          {
+            "observation-uuid": "22a0e9ba-99fa-5f55-88a4-41904118fd20"
+          }
+        ]
+      },
+      {
+        "uuid": "e0c30e00-2e79-534d-942d-d686fce75d47",
+        "title": "The demo OS must protect audit tools from unauthorized modification.",
+        "description": "The demo OS must protect audit tools from unauthorized modification.\n\nSynthetic discussion for V-900005. Not real STIG content.",
+        "statement": "Synthetic fix: apply the configuration described in DEMO-OS-000050.",
+        "props": [
+          {
+            "name": "severity-category",
+            "value": "CAT III",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "raw-severity",
+            "value": "Low",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "source",
+            "value": "SYNTHETIC Demo Operating System Security Technical Implementation Guide :: Version 1 Release 2 Benchmark Date: 01 Oct 2026",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "cci",
+            "value": "CCI-001494",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "status": "open",
+        "deadline": "2027-05-16T23:59:59Z",
+        "related-observations": [
+          {
+            "observation-uuid": "f73f35c3-1d5e-563a-b109-2665f6ceaadf"
+          }
+        ]
+      },
+      {
+        "uuid": "239437a9-396c-51bd-b5b3-d6becd3b602b",
+        "title": "The demo OS must protect the confidentiality of transmitted information.",
+        "description": "The demo OS must protect the confidentiality of transmitted information.\n\nSynthetic discussion for V-900009. Not real STIG content.",
+        "statement": "Synthetic fix: apply the configuration described in DEMO-OS-000090.",
+        "props": [
+          {
+            "name": "severity-category",
+            "value": "CAT III",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "raw-severity",
+            "value": "Low",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "source",
+            "value": "SYNTHETIC Demo Operating System Security Technical Implementation Guide :: Version 1 Release 2 Benchmark Date: 01 Oct 2026",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "cci",
+            "value": "CCI-002418",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "status": "open",
+        "deadline": "2027-05-16T23:59:59Z",
+        "related-observations": [
+          {
+            "observation-uuid": "e1d5abe3-1981-56e5-ad19-672a6b457abf"
+          }
+        ]
+      },
+      {
+        "uuid": "521c4156-1361-52ae-985c-79d1285d8c57",
+        "title": "SYNTHETIC: Demo SSH Server Banner Discloses Version",
+        "description": "SYNTHETIC: Demo SSH Server Banner Discloses Version\n\nSynthetic synopsis for plugin 900104.",
+        "statement": "Synthetic solution: upgrade or reconfigure per vendor guidance.",
+        "props": [
+          {
+            "name": "severity-category",
+            "value": "CAT III",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "raw-severity",
+            "value": "Low",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "source",
+            "value": "ACAS: Misc.",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "status": "open",
+        "deadline": "2027-05-16T23:59:59Z",
+        "related-observations": [
+          {
+            "observation-uuid": "f011faf9-23fa-58b9-b411-c144c7f0cba6"
+          }
+        ]
+      }
+    ],
+    "findings": [
+      {
+        "uuid": "5499ad37-fceb-5780-a08f-81753a66fc58",
+        "title": "AC-17(2) not satisfied: V-900007",
+        "description": "Open CAT I weakness mapped to AC-17(2) (CCI).",
+        "target": {
+          "type": "statement-id",
+          "target-id": "ac-17.2_smt",
+          "status": {
+            "state": "not-satisfied"
+          }
+        },
+        "related-observations": [
+          {
+            "observation-uuid": "7e70789b-df12-5f9e-9d95-0b15e33c3d70"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "18332498-cff0-5b3c-b0af-410138991558"
+          }
+        ]
+      },
+      {
+        "uuid": "b3fb71d8-2739-5b8b-b551-ff1ca58be958",
+        "title": "IA-5(1) not satisfied: V-900001",
+        "description": "Open CAT I weakness mapped to IA-5(1) (CCI).",
+        "target": {
+          "type": "statement-id",
+          "target-id": "ia-5.1_smt",
+          "status": {
+            "state": "not-satisfied"
+          }
+        },
+        "related-observations": [
+          {
+            "observation-uuid": "aee2d112-4ccd-5140-a7f0-4cf92575b367"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "5c4fd54e-20dd-5f6b-8c66-0e730f40876b"
+          }
+        ]
+      },
+      {
+        "uuid": "024e8292-66c2-57d1-a8b2-1d16627ca8ed",
+        "title": "SI-2 not satisfied: ACAS-900101",
+        "description": "Open CAT I weakness mapped to SI-2 (ACAS default).",
+        "target": {
+          "type": "statement-id",
+          "target-id": "si-2_smt",
+          "status": {
+            "state": "not-satisfied"
+          }
+        },
+        "related-observations": [
+          {
+            "observation-uuid": "0e0f3e29-2cc3-524e-aa05-a7da6c2aa7c2"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "22fbafad-37ed-50c0-aec5-157a3fbd35b5"
+          }
+        ]
+      },
+      {
+        "uuid": "a87af600-eab3-5af7-89f4-072397e2ec2e",
+        "title": "SI-2 not satisfied: ACAS-900103",
+        "description": "Open CAT I weakness mapped to SI-2 (ACAS default).",
+        "target": {
+          "type": "statement-id",
+          "target-id": "si-2_smt",
+          "status": {
+            "state": "not-satisfied"
+          }
+        },
+        "related-observations": [
+          {
+            "observation-uuid": "40627f7a-2a70-5bea-967e-41b6fdcd09bc"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "ab52e813-617d-5058-910b-6e1da17b3f43"
+          }
+        ]
+      },
+      {
+        "uuid": "84504cfb-0374-571c-8b50-2a3a518808a6",
+        "title": "SI-2 not satisfied: ACAS-900105",
+        "description": "Open CAT I weakness mapped to SI-2 (ACAS default).",
+        "target": {
+          "type": "statement-id",
+          "target-id": "si-2_smt",
+          "status": {
+            "state": "not-satisfied"
+          }
+        },
+        "related-observations": [
+          {
+            "observation-uuid": "d8d76fb6-9655-5f84-a9c9-51c90743d239"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "2526e6c8-a926-5abe-803d-5027f849c67e"
+          }
+        ]
+      },
+      {
+        "uuid": "180ccb89-328d-54d0-864f-e4f80311b6c8",
+        "title": "AC-3 not satisfied: V-900008",
+        "description": "Open CAT II weakness mapped to AC-3 (CCI).",
+        "target": {
+          "type": "statement-id",
+          "target-id": "ac-3_smt",
+          "status": {
+            "state": "not-satisfied"
+          }
+        },
+        "related-observations": [
+          {
+            "observation-uuid": "b81f855a-5aba-5e1c-bb2b-1455ae65eca6"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "f5c90fd9-f277-537a-8d4f-a3c9380dc890"
+          }
+        ]
+      },
+      {
+        "uuid": "155953d1-6e5a-543a-807d-71d5997b337c",
+        "title": "AC-7 not satisfied: V-900003",
+        "description": "Open CAT II weakness mapped to AC-7 (CCI).",
+        "target": {
+          "type": "statement-id",
+          "target-id": "ac-7_smt",
+          "status": {
+            "state": "not-satisfied"
+          }
+        },
+        "related-observations": [
+          {
+            "observation-uuid": "72db5b68-fff2-57ea-8b5b-850807d2113b"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "fcb6d44c-92a2-5be1-a774-4de32fcfde33"
+          }
+        ]
+      },
+      {
+        "uuid": "9ef18b44-3bb5-53e9-b650-e2c6d17b9852",
+        "title": "AC-8 not satisfied: V-900002",
+        "description": "Open CAT II weakness mapped to AC-8 (CCI).",
+        "target": {
+          "type": "statement-id",
+          "target-id": "ac-8_smt",
+          "status": {
+            "state": "not-satisfied"
+          }
+        },
+        "related-observations": [
+          {
+            "observation-uuid": "695474d2-d7d0-5138-9b79-2c4f7f918790"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "c6e685b9-8c36-5aa7-bd32-dfcc0f8e3f6c"
+          }
+        ]
+      },
+      {
+        "uuid": "4146f6f7-0667-5ae8-b49e-faa1d1d46658",
+        "title": "AU-12 not satisfied: V-900004",
+        "description": "Open CAT II weakness mapped to AU-12 (CCI).",
+        "target": {
+          "type": "statement-id",
+          "target-id": "au-12_smt",
+          "status": {
+            "state": "not-satisfied"
+          }
+        },
+        "related-observations": [
+          {
+            "observation-uuid": "5fdd74af-6caa-5650-bd53-1f3477ff0214"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "8ea066a3-e799-5d4c-a7b5-46c019654dfa"
+          }
+        ]
+      },
+      {
+        "uuid": "cb42663e-3b30-56db-aaef-8ecdf5b6c3ca",
+        "title": "CM-6 not satisfied: V-900006",
+        "description": "Open CAT II weakness mapped to CM-6 (CCI).",
+        "target": {
+          "type": "statement-id",
+          "target-id": "cm-6_smt",
+          "status": {
+            "state": "not-satisfied"
+          }
+        },
+        "related-observations": [
+          {
+            "observation-uuid": "edf30f97-d7f0-5e04-910a-e5d49182dcf0"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "ae075873-f666-532c-9c9c-8d6bcd0ce6f2"
+          }
+        ]
+      },
+      {
+        "uuid": "ffc1a9f3-5071-5d75-b1d3-a5fe6b26d68a",
+        "title": "CM-6 not satisfied: V-900010",
+        "description": "Open CAT II weakness mapped to CM-6 (Fallback: no mapped CCI).",
+        "target": {
+          "type": "statement-id",
+          "target-id": "cm-6_smt",
+          "status": {
+            "state": "not-satisfied"
+          }
+        },
+        "related-observations": [
+          {
+            "observation-uuid": "096b4186-8cb2-5af5-8940-4fa762bdb69e"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "c2666850-9eba-5e4d-86d3-45a4e3172cde"
+          }
+        ]
+      },
+      {
+        "uuid": "f1e299c4-6d97-5cab-8177-e3c690f32ffc",
+        "title": "SI-2 not satisfied: ACAS-900102",
+        "description": "Open CAT II weakness mapped to SI-2 (ACAS default).",
+        "target": {
+          "type": "statement-id",
+          "target-id": "si-2_smt",
+          "status": {
+            "state": "not-satisfied"
+          }
+        },
+        "related-observations": [
+          {
+            "observation-uuid": "22a0e9ba-99fa-5f55-88a4-41904118fd20"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "9ff8eb90-7337-5539-a6c1-228e59ca0322"
+          }
+        ]
+      },
+      {
+        "uuid": "f576ad3b-c164-50b3-a1c3-9929ccd9ec3f",
+        "title": "AU-9 not satisfied: V-900005",
+        "description": "Open CAT III weakness mapped to AU-9 (CCI).",
+        "target": {
+          "type": "statement-id",
+          "target-id": "au-9_smt",
+          "status": {
+            "state": "not-satisfied"
+          }
+        },
+        "related-observations": [
+          {
+            "observation-uuid": "f73f35c3-1d5e-563a-b109-2665f6ceaadf"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "e0c30e00-2e79-534d-942d-d686fce75d47"
+          }
+        ]
+      },
+      {
+        "uuid": "50913f46-a9f8-5d6b-8fd0-6335822c711e",
+        "title": "SC-8 not satisfied: V-900009",
+        "description": "Open CAT III weakness mapped to SC-8 (CCI).",
+        "target": {
+          "type": "statement-id",
+          "target-id": "sc-8_smt",
+          "status": {
+            "state": "not-satisfied"
+          }
+        },
+        "related-observations": [
+          {
+            "observation-uuid": "e1d5abe3-1981-56e5-ad19-672a6b457abf"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "239437a9-396c-51bd-b5b3-d6becd3b602b"
+          }
+        ]
+      },
+      {
+        "uuid": "4f5cf11e-8983-545a-ba60-b23a23c7bec0",
+        "title": "SI-2 not satisfied: ACAS-900104",
+        "description": "Open CAT III weakness mapped to SI-2 (ACAS default).",
+        "target": {
+          "type": "statement-id",
+          "target-id": "si-2_smt",
+          "status": {
+            "state": "not-satisfied"
+          }
+        },
+        "related-observations": [
+          {
+            "observation-uuid": "f011faf9-23fa-58b9-b411-c144c7f0cba6"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "521c4156-1361-52ae-985c-79d1285d8c57"
+          }
+        ]
+      }
+    ],
+    "poam-items": [
+      {
+        "uuid": "00a8acf1-f01e-5916-9e39-0f5f4591f0a9",
+        "title": "The demo OS must use FIPS-validated cryptography to protect remote access sessions.",
+        "description": "The demo OS must use FIPS-validated cryptography to protect remote access sessions.\n\nSynthetic discussion for V-900007. Not real STIG content.",
+        "props": [
+          {
+            "name": "poam-item-id",
+            "value": "V-900007",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "control",
+            "value": "AC-17(2)",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "severity-category",
+            "value": "CAT I",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "scheduled-completion-date",
+            "value": "2026-12-17",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "related-control",
+            "value": "SC-13",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "related-findings": [
+          {
+            "finding-uuid": "5499ad37-fceb-5780-a08f-81753a66fc58"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "7e70789b-df12-5f9e-9d95-0b15e33c3d70"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "18332498-cff0-5b3c-b0af-410138991558"
+          }
+        ]
+      },
+      {
+        "uuid": "2b5a24a0-03ca-57a2-823a-1805597a552e",
+        "title": "The demo OS must store only encrypted representations of passwords.",
+        "description": "The demo OS must store only encrypted representations of passwords.\n\nSynthetic discussion for V-900001. Not real STIG content.",
+        "props": [
+          {
+            "name": "poam-item-id",
+            "value": "V-900001",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "control",
+            "value": "IA-5(1)",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "severity-category",
+            "value": "CAT I",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "scheduled-completion-date",
+            "value": "2026-12-17",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "related-findings": [
+          {
+            "finding-uuid": "b3fb71d8-2739-5b8b-b551-ff1ca58be958"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "aee2d112-4ccd-5140-a7f0-4cf92575b367"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "5c4fd54e-20dd-5f6b-8c66-0e730f40876b"
+          }
+        ]
+      },
+      {
+        "uuid": "588b7044-fa31-5d78-8b86-1899b0545d4f",
+        "title": "SYNTHETIC: Demo Web Server < 9.9.1 Remote Code Execution",
+        "description": "SYNTHETIC: Demo Web Server < 9.9.1 Remote Code Execution\n\nSynthetic synopsis for plugin 900101.",
+        "props": [
+          {
+            "name": "poam-item-id",
+            "value": "ACAS-900101",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "control",
+            "value": "SI-2",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "severity-category",
+            "value": "CAT I",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "scheduled-completion-date",
+            "value": "2026-12-17",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "related-findings": [
+          {
+            "finding-uuid": "024e8292-66c2-57d1-a8b2-1d16627ca8ed"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "0e0f3e29-2cc3-524e-aa05-a7da6c2aa7c2"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "22fbafad-37ed-50c0-aec5-157a3fbd35b5"
+          }
+        ]
+      },
+      {
+        "uuid": "0a3e029e-c369-59c9-89c0-f1404c8fe841",
+        "title": "SYNTHETIC: Demo Database Missing Security Patch",
+        "description": "SYNTHETIC: Demo Database Missing Security Patch\n\nSynthetic synopsis for plugin 900103.",
+        "props": [
+          {
+            "name": "poam-item-id",
+            "value": "ACAS-900103",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "control",
+            "value": "SI-2",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "severity-category",
+            "value": "CAT I",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "scheduled-completion-date",
+            "value": "2026-12-17",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "related-findings": [
+          {
+            "finding-uuid": "a87af600-eab3-5af7-89f4-072397e2ec2e"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "40627f7a-2a70-5bea-967e-41b6fdcd09bc"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "ab52e813-617d-5058-910b-6e1da17b3f43"
+          }
+        ]
+      },
+      {
+        "uuid": "3a564cab-b414-567a-b72f-1b57643649a0",
+        "title": "SYNTHETIC: Demo OS Unsupported Version Detected",
+        "description": "SYNTHETIC: Demo OS Unsupported Version Detected\n\nSynthetic synopsis for plugin 900105.",
+        "props": [
+          {
+            "name": "poam-item-id",
+            "value": "ACAS-900105",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "control",
+            "value": "SI-2",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "severity-category",
+            "value": "CAT I",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "scheduled-completion-date",
+            "value": "2026-12-17",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "related-findings": [
+          {
+            "finding-uuid": "84504cfb-0374-571c-8b50-2a3a518808a6"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "d8d76fb6-9655-5f84-a9c9-51c90743d239"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "2526e6c8-a926-5abe-803d-5027f849c67e"
+          }
+        ]
+      },
+      {
+        "uuid": "4ab3d925-ecf9-5101-8d32-6fac11540e23",
+        "title": "The demo OS must enforce approved authorizations for access to system files.",
+        "description": "The demo OS must enforce approved authorizations for access to system files.\n\nSynthetic discussion for V-900008. Not real STIG content.",
+        "props": [
+          {
+            "name": "poam-item-id",
+            "value": "V-900008",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "control",
+            "value": "AC-3",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "severity-category",
+            "value": "CAT II",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "scheduled-completion-date",
+            "value": "2027-02-15",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "related-findings": [
+          {
+            "finding-uuid": "180ccb89-328d-54d0-864f-e4f80311b6c8"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "b81f855a-5aba-5e1c-bb2b-1455ae65eca6"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "f5c90fd9-f277-537a-8d4f-a3c9380dc890"
+          }
+        ]
+      },
+      {
+        "uuid": "c3ba8002-1702-56af-8e91-7d26d9564226",
+        "title": "The demo OS must enforce a limit of three consecutive invalid logon attempts.",
+        "description": "The demo OS must enforce a limit of three consecutive invalid logon attempts.\n\nSynthetic discussion for V-900003. Not real STIG content.",
+        "props": [
+          {
+            "name": "poam-item-id",
+            "value": "V-900003",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "control",
+            "value": "AC-7",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "severity-category",
+            "value": "CAT II",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "scheduled-completion-date",
+            "value": "2027-02-15",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "related-findings": [
+          {
+            "finding-uuid": "155953d1-6e5a-543a-807d-71d5997b337c"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "72db5b68-fff2-57ea-8b5b-850807d2113b"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "fcb6d44c-92a2-5be1-a774-4de32fcfde33"
+          }
+        ],
+        "remarks": "Severity overrides: web01: CAT II -> CAT III (Synthetic: compensating control - account lockout enforced upstream by IdP.)"
+      },
+      {
+        "uuid": "a152837a-36f1-52c5-89fb-4bf0e8c37e57",
+        "title": "The demo OS must display the Standard Mandatory DoD Notice and Consent Banner before granting access.",
+        "description": "The demo OS must display the Standard Mandatory DoD Notice and Consent Banner before granting access.\n\nSynthetic discussion for V-900002. Not real STIG content.",
+        "props": [
+          {
+            "name": "poam-item-id",
+            "value": "V-900002",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "control",
+            "value": "AC-8",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "severity-category",
+            "value": "CAT II",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "scheduled-completion-date",
+            "value": "2027-02-15",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "related-findings": [
+          {
+            "finding-uuid": "9ef18b44-3bb5-53e9-b650-e2c6d17b9852"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "695474d2-d7d0-5138-9b79-2c4f7f918790"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "c6e685b9-8c36-5aa7-bd32-dfcc0f8e3f6c"
+          }
+        ]
+      },
+      {
+        "uuid": "12d3562d-e690-5dd4-9e17-29fef9267783",
+        "title": "The demo OS must generate audit records for privileged activity.",
+        "description": "The demo OS must generate audit records for privileged activity.\n\nSynthetic discussion for V-900004. Not real STIG content.",
+        "props": [
+          {
+            "name": "poam-item-id",
+            "value": "V-900004",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "control",
+            "value": "AU-12",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "severity-category",
+            "value": "CAT II",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "scheduled-completion-date",
+            "value": "2027-02-15",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "related-findings": [
+          {
+            "finding-uuid": "4146f6f7-0667-5ae8-b49e-faa1d1d46658"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "5fdd74af-6caa-5650-bd53-1f3477ff0214"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "8ea066a3-e799-5d4c-a7b5-46c019654dfa"
+          }
+        ]
+      },
+      {
+        "uuid": "d2d7be52-8162-5281-bc9c-a1a15514a3d1",
+        "title": "The demo OS must be configured in accordance with the security configuration settings.",
+        "description": "The demo OS must be configured in accordance with the security configuration settings.\n\nSynthetic discussion for V-900006. Not real STIG content.",
+        "props": [
+          {
+            "name": "poam-item-id",
+            "value": "V-900006",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "control",
+            "value": "CM-6",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "severity-category",
+            "value": "CAT II",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "scheduled-completion-date",
+            "value": "2027-02-15",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "related-findings": [
+          {
+            "finding-uuid": "cb42663e-3b30-56db-aaef-8ecdf5b6c3ca"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "edf30f97-d7f0-5e04-910a-e5d49182dcf0"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "ae075873-f666-532c-9c9c-8d6bcd0ce6f2"
+          }
+        ]
+      },
+      {
+        "uuid": "4b6065c1-e3a3-5329-a7bf-4cda689ab6ba",
+        "title": "The demo OS must disable an unsupported legacy service.",
+        "description": "The demo OS must disable an unsupported legacy service.\n\nSynthetic discussion for V-900010. Not real STIG content.",
+        "props": [
+          {
+            "name": "poam-item-id",
+            "value": "V-900010",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "control",
+            "value": "CM-6",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "severity-category",
+            "value": "CAT II",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "scheduled-completion-date",
+            "value": "2027-02-15",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "related-findings": [
+          {
+            "finding-uuid": "ffc1a9f3-5071-5d75-b1d3-a5fe6b26d68a"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "096b4186-8cb2-5af5-8940-4fa762bdb69e"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "c2666850-9eba-5e4d-86d3-45a4e3172cde"
+          }
+        ]
+      },
+      {
+        "uuid": "b8bcf086-5ad0-5d5a-9e5f-841aa40cd5e4",
+        "title": "SYNTHETIC: Demo TLS Library Weak Cipher Suites Supported",
+        "description": "SYNTHETIC: Demo TLS Library Weak Cipher Suites Supported\n\nSynthetic synopsis for plugin 900102.",
+        "props": [
+          {
+            "name": "poam-item-id",
+            "value": "ACAS-900102",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "control",
+            "value": "SI-2",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "severity-category",
+            "value": "CAT II",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "scheduled-completion-date",
+            "value": "2027-02-15",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "related-findings": [
+          {
+            "finding-uuid": "f1e299c4-6d97-5cab-8177-e3c690f32ffc"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "22a0e9ba-99fa-5f55-88a4-41904118fd20"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "9ff8eb90-7337-5539-a6c1-228e59ca0322"
+          }
+        ]
+      },
+      {
+        "uuid": "591c9c82-03c7-5a2b-ae49-2469f552827b",
+        "title": "The demo OS must protect audit tools from unauthorized modification.",
+        "description": "The demo OS must protect audit tools from unauthorized modification.\n\nSynthetic discussion for V-900005. Not real STIG content.",
+        "props": [
+          {
+            "name": "poam-item-id",
+            "value": "V-900005",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "control",
+            "value": "AU-9",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "severity-category",
+            "value": "CAT III",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "scheduled-completion-date",
+            "value": "2027-05-16",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "related-findings": [
+          {
+            "finding-uuid": "f576ad3b-c164-50b3-a1c3-9929ccd9ec3f"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "f73f35c3-1d5e-563a-b109-2665f6ceaadf"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "e0c30e00-2e79-534d-942d-d686fce75d47"
+          }
+        ]
+      },
+      {
+        "uuid": "ceedf4a0-e692-5e4c-83e4-48f130bf43c1",
+        "title": "The demo OS must protect the confidentiality of transmitted information.",
+        "description": "The demo OS must protect the confidentiality of transmitted information.\n\nSynthetic discussion for V-900009. Not real STIG content.",
+        "props": [
+          {
+            "name": "poam-item-id",
+            "value": "V-900009",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "control",
+            "value": "SC-8",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "severity-category",
+            "value": "CAT III",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "scheduled-completion-date",
+            "value": "2027-05-16",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "related-findings": [
+          {
+            "finding-uuid": "50913f46-a9f8-5d6b-8fd0-6335822c711e"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "e1d5abe3-1981-56e5-ad19-672a6b457abf"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "239437a9-396c-51bd-b5b3-d6becd3b602b"
+          }
+        ]
+      },
+      {
+        "uuid": "2aea5ecb-bad6-5e2c-8f9c-7824e454724b",
+        "title": "SYNTHETIC: Demo SSH Server Banner Discloses Version",
+        "description": "SYNTHETIC: Demo SSH Server Banner Discloses Version\n\nSynthetic synopsis for plugin 900104.",
+        "props": [
+          {
+            "name": "poam-item-id",
+            "value": "ACAS-900104",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "control",
+            "value": "SI-2",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "severity-category",
+            "value": "CAT III",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          },
+          {
+            "name": "scheduled-completion-date",
+            "value": "2027-05-16",
+            "ns": "https://github.com/JulietRodriguez/stig-poam-builder/ns/oscal"
+          }
+        ],
+        "related-findings": [
+          {
+            "finding-uuid": "4f5cf11e-8983-545a-ba60-b23a23c7bec0"
+          }
+        ],
+        "related-observations": [
+          {
+            "observation-uuid": "f011faf9-23fa-58b9-b411-c144c7f0cba6"
+          }
+        ],
+        "related-risks": [
+          {
+            "risk-uuid": "521c4156-1361-52ae-985c-79d1285d8c57"
+          }
+        ]
+      }
+    ]
+  }
+}
